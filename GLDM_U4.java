@@ -1,5 +1,3 @@
-package U4;
-
 import ij.*;
 import ij.io.*;
 import ij.process.*;
@@ -21,7 +19,7 @@ public class GLDM_U4 implements PlugInFilter {
         ImageJ ij = new ImageJ(); // neue ImageJ Instanz starten und anzeigen
         ij.exitWhenQuitting(true);
 
-        IJ.open("C:/Users/matth/OneDrive/Desktop/mein Zeug/Semester 2/GLDM/StackB.zip");
+        IJ.open("insert your own path here /StackB.zip");
 
         GLDM_U4 sd = new GLDM_U4();
         sd.imp = IJ.getImage();
@@ -39,7 +37,7 @@ public class GLDM_U4 implements PlugInFilter {
 
         // ermoeglicht das Laden eines Bildes / Films
         Opener o = new Opener();
-        OpenDialog od_A = new OpenDialog("Auswählen des 2. Filmes ...",  "C:/Users/matth/OneDrive/Desktop/mein Zeug/Semester 2/GLDM/StackA.zip");
+        OpenDialog od_A = new OpenDialog("Auswählen des 2. Filmes ...",  "insert your own path here /StackA.zip");
 
         // Film A wird dazugeladen
         String dateiA = od_A.getFileName();
