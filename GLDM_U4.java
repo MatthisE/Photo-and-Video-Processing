@@ -20,6 +20,8 @@ public class GLDM_U4 implements PlugInFilter {
         ij.exitWhenQuitting(true);
 
         IJ.open("insert your own path here /StackB.zip");
+        //IJ.open("Z:/Pictures/Beispielbilder/orchid.jpg");
+
 
         GLDM_U4 sd = new GLDM_U4();
         sd.imp = IJ.getImage();
