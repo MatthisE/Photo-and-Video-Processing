@@ -1,5 +1,3 @@
-package U1;
-
 import ij.ImageJ;
 import ij.ImagePlus;
 import ij.gui.GenericDialog;
