@@ -1,5 +1,3 @@
-package U2;
-
 import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
@@ -32,8 +30,9 @@ import javax.swing.event.ChangeListener;
 
         public static void main(String args[]) {
             //new ImageJ();
-            //IJ.open("/users/barthel/applications/ImageJ/_images/orchid.jpg");
-            IJ.open("C:\\Users\\matth\\OneDrive\\Desktop\\mein Zeug\\Semester 2\\GLDM\\Bild.jpeg");
+            IJ.open("insert your own path here");
+            //IJ.open("/users/name/applications/ImageJ/_images/orchid.jpg");
+
 
             GLDM_U2 pw = new GLDM_U2();
             pw.imp = IJ.getImage();
