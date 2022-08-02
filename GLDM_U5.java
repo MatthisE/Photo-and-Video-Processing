@@ -1,5 +1,3 @@
-package U5;
-
 import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
@@ -29,7 +27,7 @@ public class GLDM_U5 implements PlugIn {
 
     public static void main(String args[]) {
 
-        IJ.open("C:\\Users\\matth\\OneDrive\\Desktop\\mein Zeug\\Semester 2\\GLDM\\Bild3.jpg");
+        IJ.open("insert your own path here");
         //IJ.open("Z:/Pictures/Beispielbilder/orchid.jpg");
 
         GLDM_U5 pw = new GLDM_U5();
