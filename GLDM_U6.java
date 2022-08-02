@@ -1,5 +1,3 @@
-package U6;
-
 import ij.IJ;
 import ij.ImagePlus;
 import ij.gui.GenericDialog;
@@ -26,7 +24,7 @@ public class GLDM_U6 implements PlugInFilter {
 
     public static void main(String args[]) {
 
-        IJ.open("C:\\Users\\matth\\OneDrive\\Desktop\\mein Zeug\\Semester 2\\GLDM\\Bild4.jpg");
+        IJ.open("insert your own path here");
         //IJ.open("Z:/Pictures/Beispielbilder/orchid.jpg");
 
         GLDM_U6 pw = new GLDM_U6();
