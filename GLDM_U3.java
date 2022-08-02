@@ -1,5 +1,3 @@
-package U3;
-
 import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
@@ -29,7 +27,7 @@ public class GLDM_U3 implements PlugIn {
 
     public static void main(String args[]) {
 
-        IJ.open("C:\\Users\\matth\\OneDrive\\Desktop\\mein Zeug\\Semester 2\\GLDM\\Bild2.jpg");
+        IJ.open("insert your own path here");
         //IJ.open("Z:/Pictures/Beispielbilder/orchid.jpg");
 
         GLDM_U3 pw = new GLDM_U3();
