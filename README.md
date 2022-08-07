@@ -8,4 +8,4 @@ exercises from the "foundations of digital media" course I took
 - U5: high pass filter and low pass filter
 - U6: resizes an image (using "nearest neighbour" and "bilinear interpolation")
 
-(Stacks A and B should be used as videos for U4)
+(Stacks A and B should be used as videos in U4)
