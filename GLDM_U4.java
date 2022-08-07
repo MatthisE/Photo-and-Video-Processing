@@ -8,7 +8,7 @@ import ij.plugin.filter.*;
 public class GLDM_U4 implements PlugInFilter {
 
     protected ImagePlus imp;
-    final static String[] choices = {"Wischen", "Weiche Blende", "Overlay 1", "Overlay 2", "Schieben", "Chroma-Keying", "Überlagerung", "Überlagerung 2", "Überlagerung 3","LSD"};
+    final static String[] choices = {"Wischen", "Weiche Blende", "Overlay 1", "Overlay 2", "Schieben", "Chroma-Keying", "Überlagerung", "Überlagerung 2", "Überlagerung 3"};
 
     public int setup(String arg, ImagePlus imp) {
         this.imp = imp;
@@ -79,7 +79,6 @@ public class GLDM_U4 implements PlugInFilter {
         if (s.equals("Überlagerung")) methode = 6;
         if (s.equals("Überlagerung 2")) methode = 62;
         if (s.equals("Überlagerung 3")) methode = 63;
-        if (s.equals("LSD")) methode = 7;
 
 
         // Arrays fuer die einzelnen Bilder
@@ -291,19 +290,7 @@ public class GLDM_U4 implements PlugInFilter {
                         }
                         pixels_Erg[pos] = 0xFF000000 + ((r & 0xff) << 16) + ((g & 0xff) << 8) + ( b & 0xff);
                     }
-
-                    if (methode == 7)
-                    {
-                        int cE = (int)(cB + (double)(z * cA));
-
-                        int r = (cE & 0xff0000) >> 16;
-                        int g = (cE & 0x00ff00) >> 8;
-                        int b = (cE & 0x0000ff);
-
-
-                        pixels_Erg[pos] = 0xFF000000 + ((r & 0xff) << 16) + ((g & 0xff) << 8) + ( b & 0xff);
-                    }
-
+                    
                 }
         }
 
